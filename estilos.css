@@ -24,5 +24,48 @@ nav a:hover {
     background-color: #275303;
     padding: 5px 10px;
     border-radius: 4px;
-    transition: background 1s, color 1s;
+    transition:  1s, color 1s;
+}
+
+.Productos{
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+
+}
+
+.Producto{
+    background: rgb(255, 2, 2);
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(1, 158, 255);
+    padding: 3px 5px 10px 5px;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0;
+    transition: box-shadow 0.3s
+}
+
+.Producto:hover{
+    box-shadow: 0 4px 16px rgba(38, 255, 0, 0.922);
+}
+
+.Producto img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.Producto h3{
+    margin: 10px 0 5px 0;
+    font-size: 1.1em;
+}
+
+.Producto p{
+    color: rgb(0, 255, 26);
+    font-weight: bold;
+    margin: 0;
+
 }
