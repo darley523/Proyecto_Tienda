@@ -15,5 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     mostrarImagen(indice);
-    setInterval(siguienteImagen, 3000);
+    setInterval(siguienteImagen, 2500);
 });
