@@ -1,11 +1,27 @@
-nav{
-    background-color: rgb(255, 0, 0);
-    padding: 10px;
-    border-radius: 30px;
-    width: 100%;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffd6ff;
 }
 
-nav ul{
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #ffd6ff;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav .logo{
+    height: 80px;
+    margin-right: 40rem;
+    margin-left: 20px;
+}
+
+nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;
@@ -13,16 +29,116 @@ nav ul{
     gap: 20px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
 nav a:hover {
-    color:rgb(247, 223, 15);
+    color: rgb(247, 223, 15);
     background-color: #275303;
     padding: 5px 10px;
     border-radius: 4px;
-    transition: background 1s, color 1s;
+    transition: 1s, color 1s;
 }
+
+.Productos{
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+
+}
+
+.Producto{
+    background: rgb(255, 2, 2);
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(1, 158, 255);
+    padding: 3px 5px 10px 5px;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0;
+    transition: box-shadow 0.3s
+}
+
+.Producto:hover{
+    box-shadow: 0 4px 16px rgba(38, 255, 0, 0.922);
+}
+
+.Producto img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.Producto h3{
+    margin: 10px 0 5px 0;
+    font-size: 1.1em;
+}
+
+.Producto p{
+    color: rgb(0, 255, 26);
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.Carrusel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.Carrusel-contenedor {
+    display: flex;
+    width: 100%;
+    gap: 0;
+}
+
+.Carrusel-contenedor img {
+    display: none;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.Categorias-contenedor{
+    background-color: #ffd6ff;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+    /*flex-wrap: wrap;*/
+}
+
+.Categoria{
+    border: 1px solid #B8BEDD;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 2px 12px 0 #7a9ac4, 0 1px 4px 0 #ffd6ff;
+    width: 200px;
+
+}
+
+.Categoria img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Categoria p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #9C89B8;
+    font-size: 1.1rem;
+}
+
+.Categoria:hover {
+    box-shadow: 0 4px 24px 0 #B8BEDD, 2px 2px 30px 0 #BBD0FF;
+}
+
