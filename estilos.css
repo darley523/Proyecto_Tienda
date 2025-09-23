@@ -6,11 +6,19 @@ html, body {
 }
 
 nav {
+    display: flex;
+    align-items: center;
     background-color: #ffd6ff;
     padding: 10px 0;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
+}
+
+nav .logo{
+    height: 80px;
+    margin-right: 40rem;
+    margin-left: 20px;
 }
 
 nav ul {
