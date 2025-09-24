@@ -1,3 +1,4 @@
+/* ----CSS INDEX.HTML---- */
 html, body {
     margin: 0;
     padding: 0;
@@ -140,5 +141,25 @@ nav a:hover {
 
 .Categoria:hover {
     box-shadow: 0 4px 24px 0 #B8BEDD, 2px 2px 30px 0 #BBD0FF;
+}
+
+/* ----CSS LOGIN.HTML---- */
+
+.login-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+.login-form{
+    background-color: #F0E6EF;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
