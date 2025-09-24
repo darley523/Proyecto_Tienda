@@ -187,9 +187,16 @@ nav a:hover {
 
 }
 
-
-
 .login-logo {
     height: 100px;
     margin-bottom: 25px; 
+}
+
+.form-ayuda-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+
+ 
 }
