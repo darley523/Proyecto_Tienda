@@ -155,11 +155,41 @@ nav a:hover {
 }
 
 .login-form{
-    background-color: #F0E6EF;
+    background-color: #f5daf2;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    text-align: center;
 }
 
+.form-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group input{
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #000000;
+
+}
+
+.login-form button{
+    background-color: #EFC3E6;
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+
+
+
+.login-logo {
+    height: 100px;
+    margin-bottom: 25px; 
+}
