@@ -156,11 +156,11 @@ nav a:hover {
 
 .login-form{
     background-color: #f5daf2;
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -171,24 +171,25 @@ nav a:hover {
 
 .form-group input{
     margin-top: 5px;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid #000000;
-
+    box-sizing: border-box;
 }
 
 .login-form button{
     background-color: #EFC3E6;
     width: 80%;
-    height: 35px;
+    height: 45px;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 1.1rem;
 
 }
 
 .login-logo {
-    height: 100px;
+    height: 150px;
     margin-bottom: 25px; 
 }
 
@@ -198,5 +199,8 @@ nav a:hover {
     justify-content: space-between;
     padding-top: 10px;
 
- 
+}
+
+.form-ayuda a{
+    font-size: 1.2rem;
 }
