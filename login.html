@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Tienda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <main class = "login-contenedor">
+        <form class = "login-form">
+            <img src="img/logo_sin_fondo.png" alt="Logo de la Tienda" class="login-logo">
+
+            <div class = "form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class = "form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="form-ayuda-contenedor">
+                    <small class="form-ayuda"><a href="#">Crear cuenta</a></small>
+                    <small class="form-ayuda"><a href="#">Recuperar contraseña</a></small>
+                </div>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </main>
+    
+</body>
+</html>
