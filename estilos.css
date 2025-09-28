@@ -2,6 +2,10 @@
 /* ----CSS INDEX.HTML---- */
 main {
     flex-grow: 1;
+    width: 100%;
+    max-width: 1400px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px; /* Añade un poco de espacio a los lados */
 }
 html, body {
     margin: 0;
@@ -10,7 +14,7 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #ffd6ff;
     font-family: "Poiret One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -18,9 +22,8 @@ html, body {
 
 nav {
     display: flex;
-    align-items: center;
-    background-color: #ffd6ff;
-    padding: 10px 0;
+    justify-content: center;
+    background-color: #ffd6ff; /* Este color ahora coincide con el body */
     width: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -28,17 +31,20 @@ nav {
 
 nav .logo{
     height: 80px;
-    margin-right: 40rem;
-    margin-left: 20px;
+    padding-right: 40px;
 }
 
 nav ul {
-    justify-content: center;
     list-style: none;
     padding: 0;
     display: flex;
     gap: 20px;
     font-size: 1.2rem;
+    align-items: center;
+    margin: 0;
+    flex-grow: 1;
+    justify-content: center;
+    flex-grow: 0; /* Evita que la lista de enlaces se expanda */
 }
 
 nav a {
@@ -46,11 +52,14 @@ nav a {
     color: #333;
     font-weight: bold;
 }
-
-nav img{
-    height: 80px;
-    margin-right: 40rem;
-    margin-left: 20px;
+.nav-contenido {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center; /* Centra el logo y los enlaces como un grupo */
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    gap: 100px; /* Añade un espacio entre el logo y los enlaces */
 }
 .Productos-contenedor{
     display: flex;
@@ -89,7 +98,7 @@ nav img{
     color: #000000;
     font-weight: bold;
     margin: 0;
-    font-family: ;
+
 
 }
 
@@ -133,6 +142,8 @@ nav img{
 
 .Categorias h2{
     background-color: #ffd6ff;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .Categoria img{
@@ -218,6 +229,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     min-height: 100vh;
     padding: 20px;
 
@@ -293,7 +305,7 @@ footer {
 .carrito-main-contenedor {
     width: 90%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0 auto; /* Ajustado para heredar el centrado de 'main' */
     padding: 20px;
 }
 
