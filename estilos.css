@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 /* ----CSS INDEX.HTML---- */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffd6ff;
+    background-color: #ffffff;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav {
@@ -28,6 +32,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
+    font-size: 1.2rem;
 }
 
 nav a {
@@ -41,29 +46,26 @@ nav img{
     margin-right: 40rem;
     margin-left: 20px;
 }
-.Productos{
+.Productos-contenedor{
     display: flex;
     justify-content: center;
     gap: 23px;
     flex-wrap: wrap;
     padding: 30px 0;
+    font-size: 1.5rem;
+    
 
 }
 
 .Producto{
-    background: rgb(255, 2, 2);
-    border: 1px solid green;
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgb(1, 158, 255);
+    box-shadow: 0 2px 8px rgb(114, 1, 114);
     padding: 3px 5px 10px 5px;
     width: 200px;
     text-align: center;
     margin: 10px 0;
-    transition: box-shadow 0.3s
-}
-
-.Producto:hover{
-    box-shadow: 0 4px 16px rgba(38, 255, 0, 0.922);
+    transition: box-shadow 0.3s;
 }
 
 .Producto img {
@@ -78,9 +80,10 @@ nav img{
 }
 
 .Producto p{
-    color: rgb(0, 255, 26);
+    color: #000000;
     font-weight: bold;
     margin: 0;
+    font-family: ;
 
 }
 
@@ -108,9 +111,9 @@ nav img{
     background-color: #ffd6ff;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    padding-top: 20px;
     gap: 20px;
-    /*flex-wrap: wrap;*/
+    padding-bottom: 40px;
 }
 
 .Categoria{
@@ -120,6 +123,10 @@ nav img{
     box-shadow: 0 2px 12px 0 #7a9ac4, 0 1px 4px 0 #ffd6ff;
     width: 200px;
 
+}
+
+.Categorias h2{
+    background-color: #ffd6ff;
 }
 
 .Categoria img{
@@ -147,7 +154,56 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
+    background-color: #ffd6ff;
+}
+
+.Categorias {
+    background-color: #ffd6ff;
+    padding-top: 1px; 
+}
+
+/* ----CSS PRODUCTOS.HTML---- */
+.filtros-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.filtro select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #B8BEDD;
+}
+
+.filtro label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn-agregar-carro {
+    background-color: #EFC3E6;
+    border: none;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.btn-agregar-carro svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 5px;}
+
+.btn-agregar-carro:hover {
+    background-color: #d6a9d0;
 }
 
 /* ----CSS LOGIN.HTML y REGISTER.HTML---- */
@@ -159,6 +215,10 @@ footer {
     min-height: 100vh;
     padding: 20px;
 
+}
+
+.login-register-body {
+    background-color: #ffd6ff;
 }
 
 .login-form{
@@ -174,6 +234,8 @@ footer {
 .form-group{
     margin-bottom: 20px;
     text-align: left;
+    font-style: italic;
+    font-size: 1.4rem;
 }
 
 .form-group input{
