@@ -305,9 +305,10 @@ footer {
 }
 
 .carrito-vista {
+    margin-top: 5.5rem;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     align-items: flex-start;
 }
 
