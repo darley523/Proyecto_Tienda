@@ -76,10 +76,12 @@ nav a {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgb(114, 1, 114);
-    padding: 3px 5px 1px 5px;
+    padding: 10px 5px;
     width: 200px;
     height: 400px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: 10px 0;
     transition: box-shadow 0.3s;
 }
@@ -211,8 +213,9 @@ footer {
     color: #333;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: auto; /* Esto empuja el botón hacia abajo */
     width: 90%;
+    align-self: center; /* Asegura que el botón se centre horizontalmente */
 }
 
 .btn-agregar-carro svg {
