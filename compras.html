@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito de Compras</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav>
+        <img src="img/logo_sin_fondo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="login.html">Iniciar sesion</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>    
+    </nav>
+
+    <main class="carrito-main-contenedor">
+        <h1>Mi Carrito de Compras</h1>
+
+        <div class="carrito-vista">
+            <!-- Columna de productos -->
+            <section class="carrito-productos">
+                <div class="carrito-item">
+                    <img src="https://dummyimage.com/100x100/EFC3E6/000.png&text=Producto+1" alt="Producto 1">
+                    <div class="carrito-item-info">
+                        <h3>Producto 1</h3>
+                        <p>Precio: $10.000</p>
+                    </div>
+                    <div class="carrito-item-cantidad">
+                        <label for="cantidad-1">Cantidad:</label>
+                        <input type="number" id="cantidad-1" value="1" min="1">
+                    </div>
+                    <div class="carrito-item-subtotal">
+                        <p>Subtotal: $10.000</p>
+                    </div>
+                    <button class="btn-eliminar">Eliminar</button>
+                </div>
+
+                <div class="carrito-item">
+                    <img src="https://dummyimage.com/100x100/EFC3E6/000.png&text=Producto+2" alt="Producto 2">
+                    <div class="carrito-item-info">
+                        <h3>Producto 2</h3>
+                        <p>Precio: $12.500</p>
+                    </div>
+                    <div class="carrito-item-cantidad">
+                        <label for="cantidad-2">Cantidad:</label>
+                        <input type="number" id="cantidad-2" value="2" min="1">
+                    </div>
+                    <div class="carrito-item-subtotal">
+                        <p>Subtotal: $25.000</p>
+                    </div>
+                    <button class="btn-eliminar">Eliminar</button>
+                </div>
+            </section>
+
+            <!-- Columna de resumen -->
+            <aside class="carrito-resumen">
+                <h2>Resumen de la Compra</h2>
+                <div class="resumen-linea">
+                    <span>Subtotal:</span>
+                    <span>$35.000</span>
+                </div>
+                <div class="resumen-linea">
+                    <span>Envío:</span>
+                    <span>$3.500</span>
+                </div>
+                <div class="resumen-total">
+                    <span>Total:</span>
+                    <span>$38.500</span>
+                </div>
+                <button class="btn-pago">Ir a Pagar</button>
+                <button class="btn-cancelar">Cancelar Compra</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tienda Blackcatgurumis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

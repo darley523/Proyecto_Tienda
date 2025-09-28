@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 /* ----CSS INDEX.HTML---- */
+main {
+    flex-grow: 1;
+}
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #ffffff;
     font-family: "Poiret One", sans-serif;
     font-weight: 400;
@@ -219,6 +225,8 @@ footer {
 
 .login-register-body {
     background-color: #ffd6ff;
+    display: block; /* Anula el display: flex del body general */
+    min-height: auto; /* Anula la altura mínima */
 }
 
 .login-form{
@@ -278,4 +286,145 @@ footer {
     display: flex; 
     justify-content: flex-end; 
     padding-top: 10px;
+}
+
+/* ----CSS COMPRAS.HTML---- */
+
+.carrito-main-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.carrito-main-contenedor h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.carrito-vista {
+    margin-top: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.carrito-productos {
+    flex: 3; /* Ocupa 3/4 del espacio */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fdf6fd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(114, 1, 114, 0.1);
+}
+
+.carrito-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.carrito-item-info {
+    flex-grow: 1;
+}
+
+.carrito-item-info h3 {
+    margin: 0 0 10px 0;
+}
+
+.carrito-item-info p {
+    margin: 0;
+    color: #555;
+}
+
+.carrito-item-cantidad input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-eliminar:hover {
+    background-color: #e60000;
+}
+
+.carrito-resumen {
+    flex: 1; /* Ocupa 1/4 del espacio */
+    background-color: #f5daf2;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-resumen h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.resumen-linea, .resumen-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.resumen-total {
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-top: 1px solid #EFC3E6;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.btn-pago, .btn-cancelar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-pago {
+    background-color: #EFC3E6;
+    color: #333;
+}
+
+.btn-pago:hover {
+    background-color: #d6a9d0;
+}
+
+.btn-cancelar {
+    background-color: #f3f3f3;
+    color: #555;
+    border: 1px solid #ccc;
+}
+
+.btn-cancelar:hover {
+    background-color: #e0e0e0;
 }
