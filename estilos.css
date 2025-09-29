@@ -111,6 +111,7 @@ nav a {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .Carrusel-contenedor {
@@ -125,6 +126,31 @@ nav a {
     height: 500px;
     object-fit: cover;
 }
+
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 214, 214, 0.87);
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    user-select: none;
+}
+
+.carrusel-btn:hover {
+    background-color: #ffffff;
+}
+
+
+.carrusel-btn-prev { left: 20px; }
+.carrusel-btn-next { right: 20px; }
+
 
 .Categorias-contenedor{
     background-color: #ffd6ff;
