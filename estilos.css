@@ -333,6 +333,21 @@ footer {
     padding-top: 10px;
 }
 
+/* Estilos para validación de formularios */
+.form-error {
+    color: #d93025;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    display: none; /* Oculto por defecto */
+    margin-top: 5px;
+}
+
+input.invalid {
+    border-color: #d93025;
+    border-width: 2px;
+}
+
 /* ----CSS COMPRAS.HTML---- */
 
 .carrito-main-contenedor {
@@ -472,4 +487,65 @@ footer {
 
 .btn-cancelar:hover {
     background-color: #e0e0e0;
+}
+
+/* ===== ESTILOS RESPONSIVE (PARA MÓVILES Y TABLETS) ===== */
+
+@media (max-width: 768px) {
+    /* --- Navegación --- */
+    nav {
+        flex-direction: column; /* Apila el logo y los enlaces */
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila los enlaces del menú */
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    nav .logo {
+        padding-right: 0; /* Quita el espacio extra del logo */
+    }
+
+    /* --- Categorías en el Index --- */
+    .Categorias-contenedor {
+        flex-direction: column; /* Apila las categorías */
+        align-items: center;
+        gap: 20px; /* Reduce el espacio entre ellas */
+    }
+
+    /* --- Filtros en Productos --- */
+    .filtros-contenedor {
+        flex-direction: column; /* Apila los filtros */
+        align-items: stretch; /* Hace que ocupen todo el ancho */
+        gap: 15px;
+    }
+
+    .filtro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .filtro label {
+        margin-bottom: 5px;
+    }
+
+    /* --- Vista del Carrito de Compras --- */
+    .carrito-vista {
+        flex-direction: column; /* Apila la lista de productos y el resumen */
+    }
+
+    .carrito-resumen {
+        width: 100%; /* Asegura que el resumen ocupe todo el ancho */
+        box-sizing: border-box;
+    }
+
+    .carrito-item {
+        flex-direction: column; /* Apila la imagen y la info del producto */
+        align-items: center;
+        text-align: center;
+    }
 }
