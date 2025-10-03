@@ -63,12 +63,17 @@ function validateRun(run) {
         else multiple = 2;
     }
 
-    const dvExpected = 11 - (sum % 11);
+    let dvExpected = 11 - (sum % 11);
     
-    if (dvExpected == 11) dvExpected = '0';
-    if (dvExpected == 10) dvExpected = 'k';
+    if (dvExpected === 11) {
+        dvExpected = '0';
+    } else if (dvExpected === 10) {
+        dvExpected = 'k';
+    } else {
+        dvExpected = String(dvExpected);
+    }
 
-    return dv == dvExpected;
+    return dv === dvExpected;
 }
 
 /* ===== VALIDACIÓN DEL FORMULARIO DE REGISTRO ===== */
