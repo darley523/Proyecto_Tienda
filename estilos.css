@@ -207,6 +207,27 @@ footer {
     background-color: #ffd6ff;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Reduce el espacio entre los elementos apilados */
+}
+
+.footer-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.instagram-logo {
+    height: 24px; /* Ajusta el tamaño del logo */
+    width: 24px;
+}
 .Categorias {
     background-color: #ffd6ff;
     padding-top: 1px; 
@@ -548,4 +569,5 @@ input.invalid {
         align-items: center;
         text-align: center;
     }
+
 }
