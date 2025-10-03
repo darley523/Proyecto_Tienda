@@ -161,7 +161,7 @@ function initLoginFormValidation() {
 
         if (isFormValid) {
             alert('¡Inicio de sesión exitoso!');
-            // Aquí iría la lógica de autenticación y redirección
+            // lógica de autenticación y redirección
             window.location.href = 'index.html';
         }
     });
